@@ -20,10 +20,11 @@ const userSchema = new mongoose.Schema(
         "Please enter a valid email",
       ],
     },
-    displayName: {
-      type: String,
-      required: true,
-    },
+    isAdmin: {
+        type: Boolean,
+        required: true,
+        default: false,
+      }
   },
   { timestamps: true }
 )
