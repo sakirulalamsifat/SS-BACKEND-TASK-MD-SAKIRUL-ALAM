@@ -69,8 +69,8 @@ const ActorType = new GraphQLObjectType({
 })
 
 const MovieType = new GraphQLObjectType({
-  name: "Actor",
-  description: "Actor type",
+  name: "Movie",
+  description: "Movie type",
   fields: () => ({
     id: { type: GraphQLID },
     name: { type: GraphQLString },
